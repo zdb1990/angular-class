@@ -2,8 +2,6 @@ import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { HomeRoutingModule, routedComponents } from './home-routing.module';
 
-
-
 @NgModule({
     imports: [
         HomeRoutingModule,
@@ -11,7 +9,8 @@ import { HomeRoutingModule, routedComponents } from './home-routing.module';
     ],
     exports: [],
     declarations: [
-        ...routedComponents
+        ...routedComponents,
+
     ],
     providers: [],
 })
