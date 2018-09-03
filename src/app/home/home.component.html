@@ -1,0 +1,43 @@
+<nz-layout class="content-box">
+    <nz-sider>
+        <ul nz-menu [nzMode]="'inline'" [nzTheme]="'light'">
+            <li nz-submenu nzOpen [routerLink]="['/framework']">
+                <span title>Angular架构</span>
+            </li>
+            <li nz-submenu>
+                <span title>表单</span>
+            </li>
+            <li nz-submenu>
+                <span title>Observable与RxJS</span>
+            </li>
+            <li nz-submenu>
+                <span title>引导启动</span>
+            </li>
+            <li nz-submenu>
+                <span title>Angular模块</span>
+            </li>
+            <li nz-submenu>
+                <span title>依赖注入</span>
+            </li>
+            <li nz-submenu>
+                <span title>HttpClient</span>
+            </li>
+            <li nz-submenu>
+                <span title>路由与导航</span>
+            </li>
+            <li nz-submenu>
+                <span title>测试</span>
+            </li>
+            <li nz-submenu>
+                <span title>速查表</span>
+            </li>
+        </ul>
+    </nz-sider>
+    <nz-layout>
+        <nz-header></nz-header>
+        <nz-content>
+            <router-outlet></router-outlet>
+        </nz-content>
+        <nz-footer></nz-footer>
+    </nz-layout>
+</nz-layout>
